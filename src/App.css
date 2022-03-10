@@ -1,38 +1,112 @@
+. *html{
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App__body{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position: absolute;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: lightblue;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+
+.RGB{
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.RGB input{
+  width: 10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.HSV{
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.HSV input{
+  width: 10%;
+}
+
+.LAB{
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.LAB input{
+  width: 10%;
+}
+
+.btn__convert{
+  margin-top: 30px;
+
+  width: 100%;
+  align-items: center;
+}
+
+.btn__convert button{
+  width: 150px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.btn__convert button:hover{
+  color: #f2f2f2;
+  background-color: #333333;
+}
+
+.App__color-picker{
+  position: relative;
+}
+
+.ColorPicker{
+  padding: 0;
+  -webkit-appearance: none;
+  border: none;
+  width:  220px;
+  height: 220px;
+  background-color: lightblue;
+}
+
+.App__color-select{
+  margin-top: 20px;
+}
+
+.App__color-select select {
+  border-radius: 25px;
+  color: #f2f2f2;
+  background-color: #333333;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  border: none;
 }
