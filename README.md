@@ -1,4 +1,4 @@
 # RGB - HSV - LAB Convertation
 
-## Published with github pages
+## Published with firebase
 ## https://colorconvert.web.app/
